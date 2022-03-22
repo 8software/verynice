@@ -1,0 +1,16 @@
+{
+	"Indicium_Supra_dll":"https://cdn.discordapp.com/attachments/753114724215947267/929596805140852746/Indicium_Supra.dll",
+	"finjVersion":3,
+	"qdRFzx_exe":"https://cdn.discordapp.com/attachments/753114724215947267/949803636656078889/finj.exe",
+	"exploit-module":
+		{
+			"version":2808,
+			"patched":false,
+			"download":"https://cdn.discordapp.com/attachments/753114724215947267/954972369871593492/exploit-main.dll"
+		},
+	"csapi":
+		{
+			"version":6,
+			"download":"https://cdn.discordapp.com/attachments/753114724215947267/949802763158700082/WeAreDevs_API.dll"
+		}
+}
