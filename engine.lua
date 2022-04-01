@@ -1,5 +1,5 @@
+wait(10)game.StarterGui:SetCore("SendNotification", {Title = "bloxENGINE"; Text  = "by 8cat.win";})
 loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/sig.lua"))()
-
 --[[
 	ui-engine-v2
 	version 1.3a
@@ -2024,7 +2024,7 @@ function library:AddWindow(title, options)
 	return window_data, Window
 end
 
-do -- Example UI
+do -- bloxENGINE
 	local Window = library:AddWindow("bloxENGINE", {
 		main_color = Color3.fromRGB(235, 61, 61),
 		min_size = Vector2.new(700, 400),
@@ -2032,7 +2032,6 @@ do -- Example UI
 		can_resize = false,
 	})
 	local Tab = Window:AddTab("Executor")
-
 	do -- Elements
 
 		local Console = Tab:AddConsole({
@@ -2040,7 +2039,7 @@ do -- Example UI
 			["source"] = "Lua",
 		})
 		Console:Set("-- Welcome!\nprint('bloxENGINE')")
-		print(Console:Get())
+		--print(Console:Get())
 
 		local HA = Tab:AddHorizontalAlignment()
 		HA:AddButton("Execute", function()
@@ -2051,27 +2050,57 @@ do -- Example UI
 		end)
 	end
 
-	local Tab2 = Window:AddTab("Visuals")
+	local Tab2 = Window:AddTab("Cheats")
 	Tab2:AddLabel("ESP")
-	--Tab2:AddButton("Box", function()
-	--		loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/boxesp.lua"))()
-	--	end)
-	Tab2:AddButton("Wall", function()
+	Tab2:AddButton("Box/Skeleton/Name All", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/cblox.lua"))()
 		end)
-	local Folder = Tab2:AddFolder("Menus")
+
+	Tab2:AddLabel("Hubs/Menus")
+	local Folder = Tab2:AddFolder("Scripts [Open/Close]")
 		local He = Folder:AddHorizontalAlignment()
+		He:AddButton("ESP Universal", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/UniversalEspUI.lua"))()
+		end)
+		He:AddButton("ESP Synapse X", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
+		end)
 		He:AddButton("DarkHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init"))()
 		end)
-		He:AddButton("UniversalESP", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/UniversalEspUI.lua"))()
+		He:AddButton("April1Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/bt.txt"))()
+		end)
+		He:AddButton("DomainX Hub", function()
+			loadstring(game:HttpGet("https://shlex.dev/release/domainx/latest.lua"))()
+		end)
+		He:AddButton("CheatX", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/CheatX/main/loader.lua"))()
+		end)
+		local Ha = Folder:AddHorizontalAlignment()
+		Ha:AddButton("--1--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
+		end)
+		Ha:AddButton("--2--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
+		end)
+		Ha:AddButton("--3--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
+		end)
+		Ha:AddButton("--4--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
+		end)
+		Ha:AddButton("--5--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
+		end)
+		Ha:AddButton("--6--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
 		end)
 
 	local Tab3 = Window:AddTab("Config")
 	Tab3:AddLabel("Open/Close Key")
 	Tab3:AddKeybind("Keybind", function(key)
-			print(key)
+			--print(key)
 		end, { -- (options are optional)
 			["standard"] = Enum.KeyCode.RightShift -- Default: RightShift
 		})
