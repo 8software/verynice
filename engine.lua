@@ -1,4 +1,4 @@
-wait(10)game.StarterGui:SetCore("SendNotification", {Title = "bloxENGINE"; Text  = "by 8cat.win";})
+wait(5)game.StarterGui:SetCore("SendNotification", {Title = "bloxENGINE"; Text  = "by 8cat.win";})
 loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/sig.lua"))()
 --[[
 	ui-engine-v2
@@ -2068,7 +2068,7 @@ do -- bloxENGINE
 		He:AddButton("DarkHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init"))()
 		end)
-		He:AddButton("April1Hub", function()
+		He:AddButton("KickME", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/bt.txt"))()
 		end)
 		He:AddButton("DomainX Hub", function()
