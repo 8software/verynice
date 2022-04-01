@@ -1,1 +1,1 @@
-game:GetService('Players').LocalPlayer:Kick('using bloxENGINE? you weren't banned, we just trolled you!')
+game:GetService('Players').LocalPlayer:Kick('using bloxENGINE? you werent banned, we just trolled you!')
