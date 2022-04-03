@@ -2082,7 +2082,7 @@ do -- bloxENGINE
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 		end)
 		Ha:AddButton("DexExplorerV4", function()
-			loadstring(game:HttpGetAsync("https://pastebin.com/raw/iuQPQq4M"))()
+			loadstring(game:HttpGet("https://pastebin.com/raw/iuQPQq4M"))()
 		end)
 		Ha:AddButton("--3--", function()
 			loadstring(game:HttpGet("https://script.lua"))()
