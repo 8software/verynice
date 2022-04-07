@@ -1,4 +1,4 @@
-wait(5)game.StarterGui:SetCore("SendNotification", {Title = "bloxENGINE"; Text  = "by 8cat.win";})
+wait(2)game.StarterGui:SetCore("SendNotification", {Title = "bloxENGINE"; Text  = "by 8cat.win";})
 loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/sig.lua"))()
 --[[
 	ui-engine-v2
