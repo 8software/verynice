@@ -1,5 +1,17 @@
-wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/sig.lua"))()
+--wait(2);
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/sig.lua"))()
+
+local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+local Notify = AkaliNotif.Notify;
+
+wait(2);
+
+Notify({
+Description = "successfully loaded into the game!";
+Title = "8cat.win/bloxENGINE";
+Duration = 10;
+});
+
 --[[
 	ui-engine-v2
 	version 1.3a
@@ -2051,51 +2063,118 @@ do -- bloxENGINE
 	end
 
 	local Tab2 = Window:AddTab("Cheats")
-	Tab2:AddLabel("ESP")
-	Tab2:AddButton("Box/Skeleton/Name All", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/cblox.lua"))()
+	Tab2:AddLabel("Just ESP -RightAlt to hide/show")
+	Tab2:AddButton("Enable", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/espun"))()
+			Notify({
+			Description = "ESP loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
 
-	Tab2:AddLabel("Hubs/Menus")
-	local Folder = Tab2:AddFolder("Scripts [Open/Close]")
+-- folder1
+
+	Tab2:AddLabel("Hubs")
+	local Folder = Tab2:AddFolder("Open/Close Hubs")
 		local He = Folder:AddHorizontalAlignment()
-		He:AddButton("ESP Universal", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/UniversalEsp.lua"))()
-		end)
-		He:AddButton("ESP Synapse X", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
+		He:AddButton("T3PHUB", function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/avhGLB5X"))()
+			Notify({
+			Description = "T3PHUB loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
 		He:AddButton("DarkHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init"))()
+			Notify({
+			Description = "DarkHub loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
 		He:AddButton("Solaris", function()
 			loadstring(game:HttpGet("https://solarishub.dev/script.lua"))()
+			Notify({
+			Description = "Solaris loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
 		He:AddButton("DomainX Hub", function()
 			loadstring(game:HttpGet("https://shlex.dev/release/domainx/latest.lua"))()
+			Notify({
+			Description = "DomainX loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
-		He:AddButton("CheatX", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/CheatX/main/loader.lua"))()
+--[[	Ha:AddButton("--5--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
 		end)
+		Ha:AddButton("--6--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
+		end)
+		]]
 		local Ha = Folder:AddHorizontalAlignment()
 		Ha:AddButton("Infinite Yield FE", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+			Notify({
+			Description = "InfiniteYield loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
-		Ha:AddButton("DexExplorerV4", function()
+--[[	Ha:AddButton("DexExplorerV4", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/iuQPQq4M"))()
+			Notify({
+			Description = "DEX loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
-		Ha:AddButton("Kick ME", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/bt.txt"))()
+		Ha:AddButton("--3--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
 		end)
 		Ha:AddButton("--4--", function()
 			loadstring(game:HttpGet("https://script.lua"))()
 		end)
 		Ha:AddButton("--5--", function()
 			loadstring(game:HttpGet("https://script.lua"))()
+		end)]]
+		Ha:AddButton("Kick ME", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/8software/verynice/main/bt.txt"))()
+			Notify({
+			Description = "Kick loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
-		Ha:AddButton("--6--", function()
-			loadstring(game:HttpGet("https://script.lua"))()
+
+-- folder2
+
+	Tab2:AddLabel("FPS Cheats")
+	local Folder1 = Tab2:AddFolder("Open/Close FPS Cheats")
+		local He1 = Folder1:AddHorizontalAlignment()
+		He1:AddButton("Universal ESP", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/UniversalEsp.lua"))()
+			Notify({
+			Description = "Universal ESP loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
+		He1:AddButton("CheatX", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/CheatX/main/loader.lua"))()
+			Notify({
+			Description = "CheatX loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
+		end)
+
+-- tab config
 
 	local Tab3 = Window:AddTab("Config")
 	Tab3:AddLabel("Open/Close Key")
