@@ -2110,10 +2110,15 @@ do -- bloxENGINE
 			Duration = 5;
 			});
 		end)
---[[	Ha:AddButton("--5--", function()
-			loadstring(game:HttpGet("https://script.lua"))()
+		Ha:AddButton("OrcaHub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
+			Notify({
+			Description = "OrcaHub loaded!";
+			Title = "bloxENGINE | Status";
+			Duration = 5;
+			});
 		end)
-		Ha:AddButton("--6--", function()
+--[[		Ha:AddButton("--6--", function()
 			loadstring(game:HttpGet("https://script.lua"))()
 		end)
 		]]
@@ -2126,7 +2131,7 @@ do -- bloxENGINE
 			Duration = 5;
 			});
 		end)
---[[	Ha:AddButton("DexExplorerV4", function()
+	--[[	Ha:AddButton("DexExplorerV4", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/iuQPQq4M"))()
 			Notify({
 			Description = "DEX loaded!";
