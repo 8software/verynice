@@ -2110,7 +2110,7 @@ do -- bloxENGINE
 			Duration = 5;
 			});
 		end)
-		Ha:AddButton("OrcaHub", function()
+		He:AddButton("OrcaHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
 			Notify({
 			Description = "OrcaHub loaded!";
@@ -2118,7 +2118,7 @@ do -- bloxENGINE
 			Duration = 5;
 			});
 		end)
---[[		Ha:AddButton("--6--", function()
+--[[	Ha:AddButton("--6--", function()
 			loadstring(game:HttpGet("https://script.lua"))()
 		end)
 		]]
