@@ -2118,10 +2118,7 @@ do -- bloxENGINE
 			Duration = 5;
 			});
 		end)
---[[	Ha:AddButton("--6--", function()
-			loadstring(game:HttpGet("https://script.lua"))()
-		end)
-		]]
+
 		local Ha = Folder:AddHorizontalAlignment()
 		Ha:AddButton("Infinite Yield FE", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
@@ -2131,13 +2128,8 @@ do -- bloxENGINE
 			Duration = 5;
 			});
 		end)
-	--[[	Ha:AddButton("DexExplorerV4", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/iuQPQq4M"))()
-			Notify({
-			Description = "DEX loaded!";
-			Title = "bloxENGINE | Status";
-			Duration = 5;
-			});
+--[[	Ha:AddButton("--2--", function()
+			loadstring(game:HttpGet("https://script.lua"))()
 		end)
 		Ha:AddButton("--3--", function()
 			loadstring(game:HttpGet("https://script.lua"))()
