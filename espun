@@ -67,7 +67,7 @@ getgenv().EspSettings = {
 		HealthDataType = "Percentage" -- "Percentage" or "Value"
 	},
 	Skeletons = {
-		Enabled = true,
+		Enabled = false,
 		Transparency = 1,
 		Color = Color3.fromRGB(255,255,255),
 		UseTeamColor = true,
@@ -90,7 +90,7 @@ getgenv().EspSettings = {
 		OutlineBarOnly = true
 	},
 	HeadDots = {
-		Enabled = true,
+		Enabled = false,
 		Transparency = 1,
 		Color = Color3.fromRGB(255,255,255),
 		UseTeamColor = true,
