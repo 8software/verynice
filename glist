@@ -7,6 +7,4 @@ elseif game.PlaceId == 633284182 then -- Fireteam
 	print("false")
 elseif game.PlaceId == 2029250188 then -- Q-Clash
 	print("false")
-else
-	print("false")
 end
