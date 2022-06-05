@@ -1,10 +1,6 @@
 if game.GameId == 8007761278 then --KrushPvP
 	print("Krush PvP Detected, loading...")
 	loadstring(game:HttpGet("https://pastebin.com/raw/bmX0kewH"))()
-elseif game.PlaceId == 2158109152 then -- Weapon Kit
-	print("false")
-elseif game.PlaceId == 633284182 then -- Fireteam
-	print("false")
-elseif game.PlaceId == 2029250188 then -- Q-Clash
+else
 	print("false")
 end
