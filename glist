@@ -1,4 +1,4 @@
-if game.GameId == 8007761278 then --KrushPvP
+if game.PlaceId == 8007761278 then --KrushPvP
 	print("Krush PvP Detected, loading...")
 	loadstring(game:HttpGet("https://pastebin.com/raw/bmX0kewH"))()
 else
