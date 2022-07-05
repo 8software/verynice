@@ -1096,12 +1096,12 @@ end
 
 local themes = {
     GameOwner = {
-        ["Accent"] = Color3.fromRGB(255, 95, 0),
+        ["Accent"] = Color3.fromRGB(188, 88, 20),
         ["Window Background"] = Color3.fromRGB(30, 30, 30),
         ["Window Border"] = Color3.fromRGB(45, 45, 45),
         ["Tab Background"] = Color3.fromRGB(20, 20, 20),
         ["Tab Border"] = Color3.fromRGB(111, 50, 15),
-        ["Tab Toggle Background"] = Color3.fromRGB(200, 111, 35),
+        ["Tab Toggle Background"] = Color3.fromRGB(188, 88, 20),
         ["Section Background"] = Color3.fromRGB(18, 18, 18),
         ["Section Border"] = Color3.fromRGB(35, 35, 35),
         ["Text"] = Color3.fromRGB(200, 200, 200),
