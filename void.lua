@@ -1095,6 +1095,22 @@ function utility.rgba(r, g, b, alpha)
 end
 
 local themes = {
+    GameOwner = {
+        ["Accent"] = Color3.fromRGB(255, 95, 0),
+        ["Window Background"] = Color3.fromRGB(30, 30, 30),
+        ["Window Border"] = Color3.fromRGB(45, 45, 45),
+        ["Tab Background"] = Color3.fromRGB(20, 20, 20),
+        ["Tab Border"] = Color3.fromRGB(111, 50, 15),
+        ["Tab Toggle Background"] = Color3.fromRGB(200, 111, 35),
+        ["Section Background"] = Color3.fromRGB(18, 18, 18),
+        ["Section Border"] = Color3.fromRGB(35, 35, 35),
+        ["Text"] = Color3.fromRGB(200, 200, 200),
+        ["Disabled Text"] = Color3.fromRGB(110, 110, 110),
+        ["Object Background"] = Color3.fromRGB(25, 25, 25),
+        ["Object Border"] = Color3.fromRGB(35, 35, 35),
+        ["Dropdown Option Background"] = Color3.fromRGB(19, 19, 19)
+    },
+
     Default = {
         ["Accent"] = Color3.fromRGB(113, 93, 133),
         ["Window Background"] = Color3.fromRGB(30, 30, 30),
@@ -1371,7 +1387,7 @@ function library:SetTheme(theme)
 end
 
 function library:GetThemes()
-    local themes = {"Default", "Midnight"}
+    local themes = {"GameOwner", "Default", "Midnight"}
 
     local folderpath = string.format("%s//themes", self.folder)
 
@@ -2765,7 +2781,7 @@ function library:Load(options)
     local name = options.name
     local sizeX = options.sizex or 500
     local sizeY = options.sizey or 550
-    local theme = options.theme and options.theme or "Default"
+    local theme = options.theme and options.theme or "GameOwner"
     local overrides = options.themeoverrides or {}
     local folder = options.folder
     local extension = options.extension
